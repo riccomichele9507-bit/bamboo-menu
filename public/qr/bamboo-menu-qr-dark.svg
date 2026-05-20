@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 1120" width="800" height="1120">
+  <defs>
+    <radialGradient id="glow_dark" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#c9a25a" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#c9a25a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1120" fill="#0b0e0c"/>
+  <rect width="800" height="1120" fill="url(#glow_dark)"/>
+
+  <!-- Outer frame -->
+  <rect x="22" y="22" width="756" height="1076"
+        fill="none" stroke="#c9a25a" stroke-opacity="0.18" stroke-width="1" rx="3"/>
+  <!-- Inner frame hairline -->
+  <rect x="32" y="32" width="736" height="1056"
+        fill="none" stroke="#c9a25a" stroke-opacity="0.08" stroke-width="0.6" rx="2"/>
+
+  <!-- Top decorative rule -->
+  <line x1="80" y1="80" x2="720" y2="80"
+        stroke="#c9a25a" stroke-opacity="0.2" stroke-width="0.8"/>
+
+  <!-- Eyebrow: decorative dots + subtitle -->
+  <g transform="translate(400, 118)" text-anchor="middle">
+    <line x1="-90" y1="0" x2="-16" y2="0"
+          stroke="#c9a25a" stroke-opacity="0.35" stroke-width="1"/>
+    <circle cx="0" cy="0" r="3" fill="#c9a25a"/>
+    <line x1="16" y1="0" x2="90" y2="0"
+          stroke="#c9a25a" stroke-opacity="0.35" stroke-width="1"/>
+  </g>
+
+  <!-- Main brand title -->
+  <text x="400" y="220"
+        text-anchor="middle"
+        font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif"
+        font-size="88" font-weight="400" letter-spacing="6"
+        fill="#c9a25a">
+    Bamboo
+  </text>
+
+  <!-- Tagline -->
+  <text x="400" y="262"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13" font-weight="400" letter-spacing="7"
+        fill="rgba(243,238,226,0.55)">
+    COCKTAIL BAR · LECCE
+  </text>
+
+  <!-- Divider dots -->
+  <g transform="translate(400, 284)">
+    <circle cx="-20" cy="0" r="2" fill="#c9a25a" fill-opacity="0.45"/>
+    <circle cx="0"   cy="0" r="3" fill="#c9a25a"/>
+    <circle cx="20"  cy="0" r="2" fill="#c9a25a" fill-opacity="0.45"/>
+  </g>
+
+  <!-- QR panel background -->
+  <rect x="138" y="278"
+        width="524" height="524"
+        fill="rgba(201,162,90,0.05)" rx="14"
+        stroke="#c9a25a" stroke-opacity="0.22" stroke-width="1"/>
+
+  <!-- QR code (scaled) -->
+  <g transform="translate(160 300) scale(14.545454545454545)">
+    <path stroke="#c9a25a" d="M0 0.5h7m1 0h3m4 0h1m2 0h1m1 0h1m2 0h2m1 0h7M0 1.5h1m5 0h1m1 0h1m2 0h4m6 0h2m1 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m6 0h4m2 0h4m1 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m6 0h1m3 0h1m2 0h1m1 0h3m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m2 0h4m4 0h5m4 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h2m3 0h3m7 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h1m2 0h1m3 0h1m1 0h1m3 0h3M2 8.5h3m1 0h1m1 0h2m2 0h3m2 0h3m2 0h6m2 0h3M5 9.5h1m4 0h1m1 0h1m1 0h1m4 0h3m1 0h1m1 0h2m2 0h1m2 0h1M0 10.5h3m1 0h3m2 0h1m1 0h5m1 0h2m1 0h2m2 0h1m2 0h1m3 0h1M1 11.5h2m1 0h2m1 0h2m4 0h4m1 0h2m1 0h4m1 0h1m2 0h2m1 0h1M1 12.5h1m2 0h3m1 0h3m2 0h1m2 0h1m4 0h1m2 0h2m2 0h2M0 13.5h1m6 0h5m1 0h1m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1M0 14.5h2m1 0h1m2 0h3m2 0h4m3 0h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h1M2 15.5h3m3 0h3m2 0h3m1 0h1m2 0h4m2 0h2m1 0h4M2 16.5h2m2 0h3m3 0h1m2 0h1m7 0h1m1 0h1m2 0h1m2 0h2M0 17.5h1m11 0h3m1 0h1m2 0h2m2 0h2m1 0h1m5 0h1M3 18.5h5m1 0h4m2 0h2m1 0h1m1 0h3m4 0h2m1 0h1M0 19.5h3m4 0h1m3 0h2m1 0h2m2 0h7m3 0h3M1 20.5h1m1 0h1m1 0h6m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h3m1 0h2M0 21.5h2m3 0h1m5 0h4m1 0h2m1 0h1m1 0h1m2 0h1m1 0h1m3 0h1m1 0h1M0 22.5h1m1 0h1m2 0h2m4 0h3m2 0h2m2 0h3m6 0h3M0 23.5h1m2 0h3m1 0h1m1 0h1m1 0h4m2 0h1m1 0h5m4 0h4M0 24.5h1m1 0h1m3 0h1m4 0h3m4 0h1m1 0h1m1 0h7m2 0h1M8 25.5h4m2 0h3m1 0h3m2 0h2m3 0h3m1 0h1M0 26.5h7m3 0h6m1 0h4m1 0h3m1 0h1m1 0h4M0 27.5h1m5 0h1m2 0h2m2 0h1m1 0h1m2 0h1m1 0h1m2 0h2m3 0h1m1 0h3M0 28.5h1m1 0h3m1 0h1m1 0h2m1 0h3m3 0h1m3 0h2m1 0h5m2 0h2M0 29.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m5 0h1m2 0h3m2 0h1m1 0h2M0 30.5h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h1m1 0h3m2 0h1m1 0h4m2 0h2M0 31.5h1m5 0h1m2 0h1m1 0h1m1 0h3m1 0h2m3 0h1m2 0h3m1 0h2M0 32.5h7m3 0h3m1 0h1m2 0h1m2 0h1m2 0h4m2 0h1m1 0h1"/>
+  </g>
+
+  <!-- Corner accent lines around QR panel -->
+  <!-- Top-left -->
+  <line x1="138" y1="278" x2="188" y2="278"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <line x1="138" y1="278" x2="138" y2="328"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <!-- Top-right -->
+  <line x1="662" y1="278" x2="612" y2="278"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <line x1="662" y1="278" x2="662" y2="328"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <!-- Bottom-left -->
+  <line x1="138" y1="802" x2="188" y2="802"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <line x1="138" y1="802" x2="138" y2="752"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <!-- Bottom-right -->
+  <line x1="662" y1="802" x2="612" y2="802"
+        stroke="#c9a25a" stroke-width="2.5"/>
+  <line x1="662" y1="802" x2="662" y2="752"
+        stroke="#c9a25a" stroke-width="2.5"/>
+
+  <!-- CTA — Italian (primary, serif italic) -->
+  <text x="400" y="848"
+        text-anchor="middle"
+        font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif"
+        font-size="30" font-style="italic" font-weight="400"
+        fill="#f3eee2">
+    Scansiona per il menu
+  </text>
+
+  <!-- CTA — multilingual (secondary, sans) -->
+  <text x="400" y="880"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13" font-weight="300" letter-spacing="0.5"
+        fill="rgba(243,238,226,0.55)">
+    Scan the menu · Scanne le menu · Men&#xFC; scannen
+  </text>
+
+  <!-- Bottom divider -->
+  <line x1="328" y1="1032" x2="472" y2="1032"
+        stroke="#c9a25a" stroke-opacity="0.18" stroke-width="0.8"/>
+
+  <!-- Footer: address -->
+  <text x="400" y="1058"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11" font-weight="400" letter-spacing="1.5"
+        fill="rgba(243,238,226,0.28)">
+    VIA MICHELANGELO SCHIPA, 2 · LECCE
+  </text>
+
+  <!-- Footer: URL hint -->
+  <text x="400" y="1078"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10" font-weight="400" letter-spacing="1"
+        fill="rgba(243,238,226,0.28)">
+    bamboo-menu.vercel.app
+  </text>
+</svg>

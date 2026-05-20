@@ -1,13 +1,38 @@
+import { useState } from "react";
 import { Header } from "./components/Header";
 import { CategoryNav } from "./components/CategoryNav";
 import { CategorySection } from "./components/CategorySection";
+import { LanguageLanding } from "./components/LanguageLanding";
 import { categories } from "./lib/menu-data";
 import { useLang } from "./lib/useLang";
 import { ui } from "./lib/i18n";
+import type { Lang } from "./lib/menu-data";
+
+/** Returns true if a language is already known (URL param OR localStorage). */
+function langAlreadyKnown(): boolean {
+  const params = new URLSearchParams(window.location.search);
+  const urlLang = params.get("lang");
+  if (urlLang) return true;
+  const saved = localStorage.getItem("bamboo_lang");
+  if (saved) return true;
+  return false;
+}
 
 export function App() {
   const { lang, setLang } = useLang();
   const strings = ui[lang];
+
+  // Show landing only when no language has been chosen/inferred from URL or storage.
+  const [hasChosenLang, setHasChosenLang] = useState<boolean>(langAlreadyKnown);
+
+  function handleLangChoose(l: Lang) {
+    setLang(l);
+    setHasChosenLang(true);
+  }
+
+  if (!hasChosenLang) {
+    return <LanguageLanding onChoose={handleLangChoose} />;
+  }
 
   return (
     <div
@@ -110,26 +135,66 @@ export function App() {
         <footer
           style={{
             borderTop: "1px solid rgba(201,162,90,0.15)",
-            padding: "24px 0 40px",
+            padding: "28px 0 48px",
             textAlign: "center",
           }}
         >
+          {/* Brand */}
           <div
             style={{
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: "20px",
               fontStyle: "italic",
               color: "rgba(201,162,90,0.7)",
-              marginBottom: "8px",
+              marginBottom: "16px",
             }}
           >
             Bamboo · Lecce
           </div>
+
+          {/* Address */}
+          <p
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontSize: "12px",
+              color: "rgba(243,238,226,0.55)",
+              margin: "0 0 6px",
+              letterSpacing: "0.04em",
+            }}
+          >
+            {strings.address}
+          </p>
+
+          {/* Hours */}
+          <p
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontSize: "12px",
+              color: "rgba(243,238,226,0.45)",
+              margin: "0 0 20px",
+              letterSpacing: "0.03em",
+            }}
+          >
+            <span
+              style={{
+                color: "rgba(201,162,90,0.6)",
+                marginRight: "6px",
+                fontSize: "10px",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+              }}
+            >
+              {strings.hoursLabel}
+            </span>
+            {strings.hours}
+          </p>
+
+          {/* Disclaimer */}
           <p
             style={{
               fontFamily: "Inter, sans-serif",
               fontSize: "11px",
-              color: "rgba(243,238,226,0.35)",
+              color: "rgba(243,238,226,0.25)",
               margin: 0,
               letterSpacing: "0.05em",
             }}
